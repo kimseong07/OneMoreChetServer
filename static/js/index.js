@@ -54,7 +54,7 @@ function send() {
   var chat = document.getElementById('chat')
   var msg = document.createElement('div')
   var node = document.createTextNode(message)
-  msg.classList.add('me')
+  //msg.classList.add('me')
   msg.appendChild(node)
   chat.appendChild(msg)
 
