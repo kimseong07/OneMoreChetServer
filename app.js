@@ -44,7 +44,7 @@ io.sockets.on('connection', function(socket)
 
         console.log(data);
 
-        io.sockets.emit('update', data);
+        socket.broadcast.emit('update', data);
     });
 
     socket.on('disconnect', function(){
