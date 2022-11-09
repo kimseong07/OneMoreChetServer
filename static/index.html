@@ -14,6 +14,20 @@
       <div>
         <input type="text" id="test" placeholder="메시지를 입력해주세요..">
         <button onclick="send()">전송</button>
+        char <input type="text" id="keychar"><br>
+        keycode <input type="text" id="keycode"><br>
+        shiftkey <input type="checkbox" id="shiftkey"><br>
+
+        <script>
+          function keypress()
+          {
+            var keycode = event.keycode;
+
+            document.getElementById('keychar').value=String.fromCharCode(keycode);
+            document.getElementById('keycode').value=keycode;
+            document.getElementById('shiftkey').value=event.shiftkey;
+          }
+        </script>
       </div>
     </div>
   </body>
