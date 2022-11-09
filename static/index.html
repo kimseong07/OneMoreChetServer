@@ -15,8 +15,9 @@
         <input type="text" id="test" placeholder="메시지를 입력해주세요..">
         <button onclick="send()">전송</button>
         <script>
-          document.querySelector('#input').addEventListener('keydown', (event)=>{
-            send();
+          document.querySelector('#test').addEventListener('keydown', (event)=>{
+            if(event.keyCode == 13)
+              send();
           })
         </script>
       </div>
